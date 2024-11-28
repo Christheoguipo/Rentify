@@ -1,19 +1,16 @@
-﻿using Rentify.Domain.Common;
-using Rentify.Domain.Common.Enums;
+﻿using Rentify.Domain.Common.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Rentify.Domain.Entities
+namespace Rentify.Application.DTOs
 {
-    public class Room: BaseEntity
+    public record RoomDto
     {
-        [Required]
         public int RoomNumber { get; set; }
-
-        [StringLength(50, ErrorMessage = "Room Name is too long.")]
         public string? RoomName { get; set; }
-
         public decimal MonthlyCost { get; set; }
-
         public RoomStatus Status{ get; set; } = RoomStatus.Vacant;
+        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public DateTime? DateModified { get; set; }
+        public bool IsActive { get; set; } = true;
     }
 }

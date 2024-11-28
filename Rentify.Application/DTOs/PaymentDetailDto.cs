@@ -1,18 +1,12 @@
 ﻿using Rentify.Domain.Common.Enums;
 using Rentify.Domain.Entities.AdvancePayments;
-using System.ComponentModel.DataAnnotations;
 
-namespace Rentify.Domain.Entities.Payments
+namespace Rentify.Application.DTOs
 {
-    public class PaymentDetail
+    public record PaymentDetailDto
     {
         public PaymentType PaymentType { get; set; }
-
-        [Range(1, double.MaxValue, ErrorMessage = "Invalid Amount.")]
         public decimal Amount { get; set; }
-
-
-        [StringLength(100, ErrorMessage = "Description is too long.")]
         public string? Description { get; set; }
 
         public AdvancePayment? AdvancePayment { get; set; }

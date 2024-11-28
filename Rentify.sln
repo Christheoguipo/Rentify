@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rentify.Domain", "Rentify.Domain\Rentify.Domain.csproj", "{5316544F-C314-4E7A-A2E8-95EF00C28840}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rentify.Application", "Rentify.Application\Rentify.Application.csproj", "{A4521742-D7CA-42A6-932A-A577D9C9DDFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5316544F-C314-4E7A-A2E8-95EF00C28840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5316544F-C314-4E7A-A2E8-95EF00C28840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5316544F-C314-4E7A-A2E8-95EF00C28840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4521742-D7CA-42A6-932A-A577D9C9DDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4521742-D7CA-42A6-932A-A577D9C9DDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4521742-D7CA-42A6-932A-A577D9C9DDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4521742-D7CA-42A6-932A-A577D9C9DDFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

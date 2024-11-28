@@ -1,6 +1,6 @@
 ﻿using Rentify.Domain.Common;
 
-namespace Rentify.Domain.Enums
+namespace Rentify.Domain.Common.Enums
 {
     public enum ChargeType
     {

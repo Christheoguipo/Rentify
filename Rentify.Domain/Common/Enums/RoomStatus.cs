@@ -1,4 +1,4 @@
-﻿namespace Rentify.Domain.Enums
+﻿namespace Rentify.Domain.Common.Enums
 {
     public enum RoomStatus
     {
