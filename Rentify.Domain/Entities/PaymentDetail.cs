@@ -1,8 +1,7 @@
 ﻿using Rentify.Domain.Common.Enums;
-using Rentify.Domain.Entities.AdvancePayments;
 using System.ComponentModel.DataAnnotations;
 
-namespace Rentify.Domain.Entities.Payments
+namespace Rentify.Domain.Entities
 {
     public class PaymentDetail
     {
@@ -14,7 +13,5 @@ namespace Rentify.Domain.Entities.Payments
 
         [StringLength(100, ErrorMessage = "Description is too long.")]
         public string? Description { get; set; }
-
-        public AdvancePayment? AdvancePayment { get; set; }
     }
 }

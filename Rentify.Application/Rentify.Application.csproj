@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTOs\AdvancePaymentDetail\**" />
+    <Compile Remove="DTOs\AdvancePayment\**" />
+    <EmbeddedResource Remove="DTOs\AdvancePaymentDetail\**" />
+    <EmbeddedResource Remove="DTOs\AdvancePayment\**" />
+    <None Remove="DTOs\AdvancePaymentDetail\**" />
+    <None Remove="DTOs\AdvancePayment\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MappingProfiles\" />
   </ItemGroup>
 

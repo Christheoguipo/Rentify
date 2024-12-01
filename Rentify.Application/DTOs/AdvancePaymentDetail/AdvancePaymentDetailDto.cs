@@ -1,6 +1,6 @@
 ﻿using Rentify.Domain.Common.Enums;
 
-namespace Rentify.Application.DTOs
+namespace Rentify.Application.DTOs.AdvancePaymentDetail
 {
     public record AdvancePaymentDetailDto
     {

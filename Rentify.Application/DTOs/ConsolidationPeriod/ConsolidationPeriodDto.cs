@@ -1,15 +1,15 @@
 ﻿using Rentify.Domain.Entities;
-using System.ComponentModel.DataAnnotations;
 
-namespace Rentify.Domain.Common
+namespace Rentify.Application.DTOs
 {
-    public abstract class BaseEntity
+    public record ConsolidationPeriodDto
     {
-        [Key]
         public Guid Id { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
         public required User CreatedBy { get; set; }
         public DateTime? DateModified { get; set; }
         public User? ModifiedBy { get; set; }
+        public DateOnly DateStart { get; set; }
+        public DateOnly DateEnd { get; set; }
     }
 }

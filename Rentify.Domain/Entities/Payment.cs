@@ -1,7 +1,7 @@
 ﻿using Rentify.Domain.Common;
 using System.ComponentModel.DataAnnotations;
 
-namespace Rentify.Domain.Entities.Payments
+namespace Rentify.Domain.Entities
 {
     public class Payment : BaseEntity
     {

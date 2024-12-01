@@ -16,6 +16,7 @@ namespace Rentify.Domain.Entities
         public required string FirstName { get; set; }
 
         [Required(ErrorMessage = "Last Name is required.")]
-        public required string Lastname { get; set;}
+        public required string Lastname { get; set; }
+        public bool IsActive { get; set; } = true;
     }
 }

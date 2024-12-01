@@ -1,6 +1,6 @@
 ﻿using Rentify.Domain.Common.Enums;
 
-namespace Rentify.Domain.Entities.AdvancePayments
+namespace Rentify.Domain.Entities
 {
     public class AdvancePaymentDetail
     {

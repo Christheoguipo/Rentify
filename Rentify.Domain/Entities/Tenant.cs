@@ -1,6 +1,4 @@
 ﻿using Rentify.Domain.Common;
-using Rentify.Domain.Entities.AdvancePayments;
-using Rentify.Domain.Entities.Invoices;
 using System.ComponentModel.DataAnnotations;
 
 namespace Rentify.Domain.Entities
@@ -20,9 +18,9 @@ namespace Rentify.Domain.Entities
 
         [EmailAddress(ErrorMessage = "Invalid Email address.")]
         public string? Email { get; set; }
+        public bool IsActive { get; set; } = true;
 
-        public required ICollection<Room> Rooms { get; set; }
-        public ICollection<Invoice>? Invoices { get; set; }
-        public ICollection<AdvancePayment>? AdvancePayments { get; set; }
+
+        public ICollection<Room>? Rooms { get; set; }
     }
 }

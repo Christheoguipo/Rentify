@@ -1,18 +1,15 @@
-﻿using Rentify.Domain.Entities.AdvancePayments;
+﻿using Rentify.Domain.Common;
 
-namespace Rentify.Application.DTOs
+namespace Rentify.Domain.Entities
 {
-    public record AdvancePaymentDto
+    public class AdvancePayment : BaseEntity
     {
         public DateOnly PaymentDate { get; set; }
         public decimal OriginalAmount { get; set; }
         public decimal RemainingAmount { get; set; }
         public bool IsConsumed { get; set; }
 
+        public required Guid TenantId { get; set; }
         public required ICollection<AdvancePaymentDetail> AdvancePaymentDetails { get; set; }
-
-        public DateTime DateCreated { get; set; } = DateTime.Now;
-        public DateTime? DateModified { get; set; }
-        public bool IsActive { get; set; } = true;
     }
 }
